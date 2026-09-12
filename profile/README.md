@@ -1,28 +1,50 @@
-# Welcome to JezzWTF! 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JezzWTF/.github/main/profile/assets/banner-dark.svg">
+  <img alt="JezzWTF — rebuilding the things i used to pay for" src="https://raw.githubusercontent.com/JezzWTF/.github/main/profile/assets/banner-light.svg" width="100%">
+</picture>
 
-This is the central hub for projects by Jezz, a UK tech enthusiast.
+UK-based developer building a self-hosted personal software stack — one API backend, a shared account system, and a set of web and mobile clients that sit on top of it.
 
-## 🚀 Current Focus
+Everything here is a side project. Nothing here is a startup... Yet.
 
-Right now, this organization serves as a way to keep my personal projects organized. I'm always learning and experimenting, so you'll find a variety of repositories here eventually.
+### The stack
 
-## ✨ What You Might Find
+Most of what I build hangs off a single self-hosted API gateway, with a shared account system so every app uses one sign-in.
 
-*   Personal projects and experiments.
-*   Explorations in FPV, drones in general, Python code, web apps etc.
-*   Open source contributions.
+| Project | What it is |
+| --- | --- |
+| **api** | Self-hosted API gateway — URL shortening, paste storage, media downloading, scraping, push notifications, OCR. Projects get scoped keys; tools are enabled per project. |
+| **accounts** | One identity across every app. Apps store no passwords — they receive an account ID and cache a profile. |
+| **jezz.wtf** | Public site — projects, articles, and photography. Content is managed in the API's CMS and pulled at build time. |
+| **pastes** | Paste and snippet app. |
+| **zap** | URL shortener with click analytics. |
+| **ctrl** | Web UI for managing Caddy reverse proxy config — add, edit, and reload proxies without SSH. |
+| **hord** | Self-hosted note-taking, Google Keep-shaped. |
+| **hanzi-path** | Duolingo-style Mandarin course, built to actually learn the language. |
 
-## 🌱 Future Plans
+### Mobile
 
-While currently focused on individual endeavors, the vision for JezzWTF is to potentially grow into a collaborative space for innovative projects. Stay tuned!
+Flutter and Kotlin clients, all talking to the same backend.
 
-## 📫 Connect with Me
+- **l8er** — self-hosted read-later and bookmarks, built after Pocket shut down
+- **lob** — Pushbullet alternative for pushing links and files between devices
+- **kite** — drone weather assessment: FLY / CAUTION / NO-FLY from an 8-factor forecast breakdown
+- **idle** — offline-first Instagram and Facebook media downloader
 
-You can find more about me and my work on my personal website: [jezz.wtf](https://jezz.wtf)
+### Desktop and tooling
 
-<!--
-## 🛠️ Technologies I Enjoy
-*   [Tech 1]
-*   [Tech 2]
-*   [Tech 3]
--->
+- **resizer** — batch image resizer for Windows, recursive across folder trees, with presets and format conversion
+- **comfyui-jezzwtf-nodes** — custom ComfyUI nodes
+- **package-scripts-sorter** — VS Code extension that spots unsorted `package.json` scripts
+
+### Working with
+
+TypeScript · Next.js · React · Tailwind · Prisma / PostgreSQL · Dart / Flutter · Kotlin · C# · Python · Caddy · Docker
+
+### A note on visibility
+
+Most repositories in this org are private. A lot of them are wired to a specific self-hosted environment and would need real work to generalise before they'd be useful to anyone else. Some will open up over time; some won't.
+
+### Elsewhere
+
+[jezz.wtf](https://jezz.wtf) — site, writing, and photography.
