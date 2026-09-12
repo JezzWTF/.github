@@ -29,7 +29,7 @@ Flutter and Kotlin clients, all talking to the same backend.
 - **l8er** — self-hosted read-later and bookmarks, built after Pocket shut down
 - **lob** — Pushbullet alternative for pushing links and files between devices
 - **kite** — drone weather assessment: FLY / CAUTION / NO-FLY from an 8-factor forecast breakdown
-- **idle** — offline-first Instagram and Facebook media downloader
+- **idle** — Meta media downloader
 
 ### Desktop and tooling
 
